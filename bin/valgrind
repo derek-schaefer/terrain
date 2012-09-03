@@ -1,0 +1,5 @@
+#!/bin/sh
+
+valgrind --tool=memcheck --leak-check=yes ./bin/terrain test.png 123 256
+
+rm -f test.png
